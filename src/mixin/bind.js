@@ -5,7 +5,7 @@ import {bindActionCreators} from 'redux';
 import actions from '../actions/rootAction';
 
 const mapStateToProps = (state) => ({
-    site: state.site
+    siteInfo: state.site
 });
 
 const mapDispatchToProps = (dispatch) => ({

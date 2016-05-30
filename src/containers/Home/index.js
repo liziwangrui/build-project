@@ -4,16 +4,17 @@
 import React from "react";
 import {connect} from 'react-redux';
 import {mapStateToProps, mapDispatchToProps} from '../../mixin/bind.js';
-var Home = React.createClass ({
-    componentDidMount: function() {
+var Home = React.createClass({
+    componentDidMount: function () {
         this.props.siteAction.fetchSite(1)
     },
-    render: function() {
+    render: function () {
+        console.log(this.props.siteInfo);
         return (
             <div>
-            <h1>home</h1>
-            <h2>{this.props.site.siteInfo.name}</h2>
-        </div>
+                <h1>home</h1>
+                <h2>{this.props.siteInfo.siteInfo.name}</h2>
+            </div>
         )
     }
 });

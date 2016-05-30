@@ -103,7 +103,7 @@ exports.production = {
         return [require('autoprefixer')];
     },
     plugins: [
-        uglifyJs,
+
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurrenceOrderPlugin(true),
         new ExtractTextPlugin('css/[name].css', {allChunks: true}),
